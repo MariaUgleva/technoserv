@@ -5,7 +5,7 @@ function pigIt(str) {
 
 function summNum(number) {
     let numToArr = number.toString().split('');
-    let result = numToArr.length;
+    let result = numToArr[0];
     while (numToArr.length !== 1) {
        result = numToArr.reduce((sum, item) => sum + +item, 0);
        numToArr = result.toString().split('');
